@@ -5,14 +5,14 @@ let books = [];
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.status(200).send("<h1>Wagwan</h1>")
-})
+// // app.get("/", (req, res) => {
+// //     res.status(200).send("<h1>Wagwan</h1>")
+// // })
 
-app.post("/", (req, res) => {
-    const { name } = req.body;
-    return res.status(200).send(`<h1>${name}</h1>`)
-})
+// // app.post("/", (req, res) => {
+// //     const { name } = req.body;
+// //     return res.status(200).send(`<h1>${name}</h1>`)
+// })
 
 app.post("/books", (req, res) => {
     const { body } = req.body;
